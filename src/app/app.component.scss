@@ -1,7 +1,7 @@
 // GLOBAL
 * {
-    outline: 1px solid red;
-  }
+  outline: 1px solid red;
+}
 
 h2 {
   font-weight: bold;
@@ -18,7 +18,7 @@ p {
 .navbar .navbar-nav .nav-link {
   margin-top: 0.5em;
   color: #000000;
-  font-size: 1.1em
+  font-size: 1.1em;
 }
 .navbar .navbar-nav .nav-link:hover {
   color: #85c8c0;
@@ -76,26 +76,32 @@ p {
 //   background-color: #C0B2CF;
 // }
 .hero-img {
-  width: 45em;
-  margin-left: 2.4em;
+  width: 30em;
+  padding: 1em;
+  background: pink;
+  margin: 3em;
+  margin-left: 8.5em;
 }
 .hero-text {
   padding: 2em;
-  margin-left: 2em;
-  color: #AAD7D3;
+  color: #aad7d3;
 }
 .hero-button {
-  background-color: #E17B8D;
+  background-color: #e17b8d;
   width: 6em;
   height: 3em;
   border-radius: 0.5em;
-  border-color: #E17B8D;
+  border-color: #e17b8d;
 }
 .hero-button-text {
   color: white;
 }
 .hero-p {
   color: #000000;
+}
+.hero-illustration {
+  margin-left: 20em;
+  width: 14em;
 }
 
 // ABOUT
