@@ -45,36 +45,6 @@ p {
 }
 
 // HERO
-// .hero-button {
-//   background-color: #e17b8d;
-//   border-radius: 5px;
-//   border-color: #e17b8d;
-//   padding-left: 2;
-//   font-size: 20px;
-//   margin-top: 5em;
-// }
-// .hero-text h2 {
-//   color: #aad7d3;
-//   text-align: left;
-// }
-// .hero-text h4 {
-//   color: black;
-//   text-align: left;
-// }
-// .hero-text h2 {
-//   font-size: 2em;
-// }
-// .hero-bg-color {
-//   background-color: white;
-// }
-
-//NOVO
-// .hero-image {
-//   background-color: rgb(192, 178, 207);
-// }
-// .hero-bg-color {
-//   background-color: #C0B2CF;
-// }
 .hero-img {
   width: 30em;
   padding: 1em;
@@ -102,6 +72,9 @@ p {
 .hero-illustration {
   margin-left: 20em;
   width: 14em;
+}
+.hero-bg-color {
+  background-color: #fff0ed;
 }
 
 // ABOUT
@@ -135,12 +108,13 @@ p {
   padding-top: 9em;
   padding-bottom: 10em;
 }
-.service-icon {
-  width: 5em;
-}
 .picsum-img-wrapper img {
   width: 95%;
   overflow-x: hidden;
+}
+.services-img {
+  width: 10em;
+  margin-left: 11em;
 }
 
 // TESTEMONIALS
