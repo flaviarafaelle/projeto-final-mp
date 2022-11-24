@@ -62,7 +62,9 @@
         <p class="hero-p">
           Horário de atendimento: <br />Todo sábado, das 14 às 17h
         </p>
-        <a href="https://goo.gl/maps/xkGPFcsxkkeyEkfq6" target="_blank"><button class="hero-button hero-button-text">LOCAL</button></a>
+        <a href="https://goo.gl/maps/xkGPFcsxkkeyEkfq6" target="_blank"
+          ><button class="hero-button hero-button-text">LOCAL</button></a
+        >
       </div>
     </div>
     <div class="col-6">
@@ -77,13 +79,16 @@
     <div class="col-6 text-center">
       <img class="about-img" src="../assets/reader-about.svg" alt="reader" />
     </div>
-    <div class="col-6 text-center p-1">
+    <div class="col-6 text-right p-1">
       <h2>A Biblioteca Suindará</h2>
       <h4>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-        consequuntur quaerat pariatur ullam, tenetur placeat doloribus harum
-        aperiam blanditiis dignissimos explicabo officiis nihil quisquam quam
-        ut, dolor voluptatem. Ad, incidunt.
+        É uma biblioteca comunitária,
+        com co-gestão do Grupo Escoteiro Irapuã e o Clã Pioneiro Suindará, sendo
+        espaço de referência no território e na democratização do acesso ao
+        livro e à leitura, como também como um lugar de acolhida e convivência
+        comunitária, difusão artística e cultural e, principalmente, como espaço
+        de ampliação de leitura de mundo, de trocas e, cada vez mais, como um
+        espaço que vem se envolvendo ativamente nas lutas comunitárias.
       </h4>
     </div>
   </div>
@@ -171,8 +176,7 @@
         <div class="box">
           <p class="description">
             Pequena, mas aconchegante, com funcionários educados e sempre
-            dispostos em ajudar, e com trás hoje eventos culturais
-            excepcionais!
+            dispostos em ajudar, e com trás hoje eventos culturais excepcionais!
           </p>
         </div>
         <div class="author">
@@ -229,7 +233,7 @@
           <img class="img-footer" src="../assets/opened-mailbox.svg" alt="" />
         </div>
         <div class="form-sub">
-          <form>
+          <form *ngIf="!enviado">
             <input
               type="text"
               placeholder="Digite o seu nome"
@@ -247,8 +251,9 @@
               required
               class="mt-3 form-control text-bg-color input"
             ></textarea>
-            <button class="btn btn-success mt-4">enviar</button>
+            <button (click)="enviado = !enviado" class="btn btn-success mt-4">enviar</button>
           </form>
+          <h6 *ngIf="enviado" class="footer-text text-center">Email enviado!</h6>
         </div>
       </div>
       <!--end footer col-->
